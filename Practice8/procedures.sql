@@ -1,4 +1,4 @@
--- 2. Insert or update a single user
+--Insert or update a single user
 
 
 CREATE OR REPLACE PROCEDURE insert_or_update_user(p_name VARCHAR, p_phone VARCHAR)
@@ -15,7 +15,7 @@ $$;
 
 
 
--- 3. Insert multiple users from arrays with validation
+--Insert multiple users from arrays with validation
 
 
 CREATE OR REPLACE PROCEDURE insert_many_users(
@@ -29,7 +29,6 @@ DECLARE
     invalid_data TEXT := '';
 BEGIN
     FOR i IN 1..array_length(p_names,1) LOOP
-        -- must be digits only
         IF p_phones[i] ~ '^[0-9]+$' THEN
             CALL insert_or_update_user(p_names[i], p_phones[i]);
         ELSE
@@ -45,7 +44,7 @@ $$;
 
 
 
--- 5. Delete user by name or phone
+--Delete user by name or phone
 
 
 CREATE OR REPLACE PROCEDURE delete_user(p_name VARCHAR DEFAULT NULL, p_phone VARCHAR DEFAULT NULL)

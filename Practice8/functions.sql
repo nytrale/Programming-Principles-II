@@ -1,4 +1,4 @@
--- 1. search by pattern
+--search by pattern
 
 
 CREATE OR REPLACE FUNCTION search_pattern(p_pattern TEXT)
@@ -16,7 +16,7 @@ $$;
 
 
 
--- 4. pagination
+--pagination
 
 
 CREATE OR REPLACE FUNCTION paginate(limit_count INT, offset_count INT)
