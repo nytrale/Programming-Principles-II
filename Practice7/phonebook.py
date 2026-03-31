@@ -3,7 +3,7 @@ import csv
 import os
 
 
-# 1. Create table
+#table
 def create_table():
     conn = get_connection()
     cur = conn.cursor()
@@ -21,7 +21,7 @@ def create_table():
     print("Table created successfully.")
 
 
-# 2. Insert from CSV
+# insert CSV
 def insert_from_csv():
     conn = get_connection()
     cur = conn.cursor()
@@ -43,7 +43,7 @@ def insert_from_csv():
     print("Contacts imported from CSV.")
 
 
-# 3. Insert from user
+#from user
 def insert_user():
     name = input("Name: ")
     phone = input("Phone: ")
@@ -62,7 +62,7 @@ def insert_user():
     print("Contact added.")
 
 
-# 4. Show all contacts
+# all contacts
 def show_all():
     conn = get_connection()
     cur = conn.cursor()
@@ -80,7 +80,7 @@ def show_all():
     conn.close()
 
 
-# 5. Query contacts with filters
+# query 
 def query_contacts():
     print("1 - Search by name")
     print("2 - Search by phone prefix")
@@ -121,7 +121,7 @@ def query_contacts():
     conn.close()
 
 
-# 6. Update phone
+# update phone
 def update_phone():
     name = input("Enter name to update: ")
     new_phone = input("Enter new phone: ")
@@ -141,7 +141,7 @@ def update_phone():
     conn.close()
 
 
-# 7. Delete by name or phone
+# delete
 def delete_contact():
     print("1 - Delete by name")
     print("2 - Delete by phone")
@@ -177,7 +177,6 @@ def delete_contact():
     conn.close()
 
 
-# Menu
 def menu():
     while True:
         print("\n--- PHONEBOOK MENU ---")
