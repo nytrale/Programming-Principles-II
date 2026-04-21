@@ -4,7 +4,6 @@ from pygame.locals import *
 
 pygame.init()
 
-# Настройки
 FPS = 60
 FramePerSec = pygame.time.Clock()
 SCREEN_WIDTH = 400
