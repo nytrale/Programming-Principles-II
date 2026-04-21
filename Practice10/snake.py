@@ -2,7 +2,7 @@ import pygame
 import random
 import sys
 
-# -------------------- SETTINGS --------------------
+
 pygame.init()
 
 WIDTH, HEIGHT = 800, 600
@@ -13,12 +13,12 @@ pygame.display.set_caption("Snake Game")
 
 clock = pygame.time.Clock()
 
-# Fonts
+
 font_small = pygame.font.SysFont("Arial", 24)
 font_medium = pygame.font.SysFont("Arial", 36)
 font_large = pygame.font.SysFont("Arial", 56)
 
-# Colors
+
 BG_COLOR = (20, 20, 30)
 GRID_COLOR = (35, 35, 50)
 SNAKE_HEAD_COLOR = (0, 220, 120)
@@ -28,11 +28,11 @@ TEXT_COLOR = (240, 240, 240)
 WALL_COLOR = (90, 90, 110)
 PANEL_COLOR = (30, 30, 45)
 
-# Game speeds
+
 START_SPEED = 8
 
 
-# -------------------- HELPER FUNCTIONS --------------------
+
 def draw_text(text, font, color, x, y, center=False):
     """Draw text on the screen."""
     surface = font.render(text, True, color)
@@ -145,7 +145,7 @@ def random_food_position(snake, walls):
     """
     while True:
         x = random.randrange(0, WIDTH, CELL_SIZE)
-        y = random.randrange(60, HEIGHT, CELL_SIZE)  # avoid top UI panel
+        y = random.randrange(60, HEIGHT, CELL_SIZE)
         food_rect = pygame.Rect(x, y, CELL_SIZE, CELL_SIZE)
 
         on_snake = (x, y) in snake
@@ -178,14 +178,14 @@ def run_game():
     while True:
         clock.tick(speed)
 
-        # -------------------- EVENTS --------------------
+
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 pygame.quit()
                 sys.exit()
 
             if event.type == pygame.KEYDOWN:
-                # Prevent snake from moving directly backwards
+
                 if event.key == pygame.K_UP and direction != (0, CELL_SIZE):
                     direction = (0, -CELL_SIZE)
                 elif event.key == pygame.K_DOWN and direction != (0, -CELL_SIZE):
@@ -195,7 +195,7 @@ def run_game():
                 elif event.key == pygame.K_RIGHT and direction != (-CELL_SIZE, 0):
                     direction = (CELL_SIZE, 0)
 
-        # -------------------- UPDATE SNAKE --------------------
+
         head_x = snake[0][0] + direction[0]
         head_y = snake[0][1] + direction[1]
         new_head = (head_x, head_y)
@@ -226,7 +226,7 @@ def run_game():
         else:
             snake.pop()
 
-        # -------------------- DRAW --------------------
+
         screen.fill(BG_COLOR)
         draw_grid()
         draw_info_panel(score, level, speed)
@@ -237,7 +237,7 @@ def run_game():
         pygame.display.update()
 
 
-# -------------------- MAIN LOOP --------------------
+
 while True:
     show_start_screen()
     final_score, final_level = run_game()

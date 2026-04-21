@@ -23,7 +23,6 @@ BLUE = (70, 120, 220)
 YELLOW = (240, 220, 70)
 GRAY = (220, 220, 220)
 
-# Settings
 clock = pygame.time.Clock()
 font = pygame.font.SysFont("Arial", 22)
 tool = "brush"
@@ -33,19 +32,16 @@ start_pos = None
 last_pos = None
 brush_size = 5
 
-# Color buttons
 colors = [BLACK, RED, GREEN, BLUE, YELLOW]
 color_rects = [pygame.Rect(20 + i * 50, 20, 35, 35) for i in range(len(colors))]
 
 def draw_toolbar():
     pygame.draw.rect(screen, GRAY, (0, 0, WIDTH, TOOLBAR_H))
 
-    # Colors
     for i, rect in enumerate(color_rects):
         pygame.draw.rect(screen, colors[i], rect)
         pygame.draw.rect(screen, BLACK, rect, 2)
 
-    # Info
     text = font.render(f"Tool: {tool}   Keys: B-brush R-rect C-circle E-eraser", True, BLACK)
     screen.blit(text, (320, 25))
 
