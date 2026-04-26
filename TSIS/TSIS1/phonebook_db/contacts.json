@@ -1,0 +1,140 @@
+[
+  {
+    "name": "Саня",
+    "phone": "+7 777 777 00 00",
+    "email": null,
+    "birthday": "1987-12-12",
+    "group": "Work",
+    "phones": []
+  },
+  {
+    "name": "Aigerim",
+    "phone": "+77045678901",
+    "email": "aigerim@yahoo.com",
+    "birthday": "1991-06-30",
+    "group": "Friend",
+    "phones": [
+      {
+        "phone": "+77045678901",
+        "type": "home"
+      }
+    ]
+  },
+  {
+    "name": "Alice",
+    "phone": "+77001112233",
+    "email": "alice@gmail.com",
+    "birthday": "1995-03-15",
+    "group": null,
+    "phones": [
+      {
+        "phone": "+77001112233",
+        "type": "mobile"
+      }
+    ]
+  },
+  {
+    "name": "Arman",
+    "phone": "+77012345678",
+    "email": "arman@gmail.com",
+    "birthday": "1996-04-12",
+    "group": "Friend",
+    "phones": [
+      {
+        "phone": "+77012345678",
+        "type": "mobile"
+      }
+    ]
+  },
+  {
+    "name": "Bob",
+    "phone": "+77002223344",
+    "email": "bob@work.com",
+    "birthday": "1988-07-22",
+    "group": null,
+    "phones": [
+      {
+        "phone": "+77002223344",
+        "type": "work"
+      }
+    ]
+  },
+  {
+    "name": "Carol",
+    "phone": "+77003334455",
+    "email": "carol@gmail.com",
+    "birthday": "1992-11-05",
+    "group": null,
+    "phones": [
+      {
+        "phone": "+77003334455",
+        "type": "home"
+      }
+    ]
+  },
+  {
+    "name": "David",
+    "phone": "+77004445566",
+    "email": "david@yahoo.com",
+    "birthday": "1990-01-30",
+    "group": null,
+    "phones": [
+      {
+        "phone": "+77004445566",
+        "type": "mobile"
+      }
+    ]
+  },
+  {
+    "name": "Diana",
+    "phone": "+77023456789",
+    "email": "diana@work.com",
+    "birthday": "1993-09-21",
+    "group": "Work",
+    "phones": [
+      {
+        "phone": "+77023456789",
+        "type": "work"
+      }
+    ]
+  },
+  {
+    "name": "Eve",
+    "phone": "+77005556677",
+    "email": "eve@gmail.com",
+    "birthday": "1997-06-18",
+    "group": null,
+    "phones": [
+      {
+        "phone": "+77005556677",
+        "type": "mobile"
+      }
+    ]
+  },
+  {
+    "name": "Nursultan",
+    "phone": "+77056789012",
+    "email": "nursultan@company.com",
+    "birthday": "1987-11-14",
+    "group": "Work",
+    "phones": [
+      {
+        "phone": "+77056789012",
+        "type": "mobile"
+      }
+    ]
+  },
+  {
+    "name": "Timur",
+    "phone": "+77034567890",
+    "email": "timur@gmail.com",
+    "birthday": "1998-12-05",
+    "group": "Family",
+    "phones": [
+      {
+        "phone": "+77034567890",
+        "type": "mobile"
+      }
+    ]
+  }
+]
