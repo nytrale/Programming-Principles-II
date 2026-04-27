@@ -10,6 +10,11 @@
     "distance": 3432
   },
   {
+    "name": "dasdas",
+    "score": 340,
+    "distance": 4295
+  },
+  {
     "name": "Nursultan",
     "score": 270,
     "distance": 3701
@@ -43,10 +48,5 @@
     "name": "Joj",
     "score": 120,
     "distance": 1259
-  },
-  {
-    "name": "ilya",
-    "score": 120,
-    "distance": 2445
   }
 ]
